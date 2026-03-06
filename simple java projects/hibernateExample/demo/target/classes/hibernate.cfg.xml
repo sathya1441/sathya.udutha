@@ -1,0 +1,17 @@
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property> <!-- mysql driver -->
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/exampleDB</property> <!--mysql Connection URL-->
+        <property name="hibernate.connection.username">SATYAU3</property> <!--mysql username-->
+        <property name="hibernate.connection.password">RJHs@1328107383</property>   <!--mysql password-->
+        <property name="hibernate.hbm2ddl.auto">update</property> <!-- hbm2ddl = hibernate mapping to DDL-->
+        <property name="hibernate.show_sql">true</property>
+        <!-- Use JDBC (resource-local) transactions rather than JTA -->
+        <property name="hibernate.transaction.coordinator_class">jdbc</property>
+        <!-- Explicitly indicate no JTA platform to silence informational log -->
+        <property name="hibernate.transaction.jta.platform">org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform</property>
+
+    </session-factory>
+</hibernate-configuration>
